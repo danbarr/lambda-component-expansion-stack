@@ -16,7 +16,7 @@ deployment "development" {
 
 deployment "production" {
   inputs = {
-    regions        = ["us-east-1", "us-west-1"]
+    regions        = ["us-east-1", "us-west-2"]
     role_arn       = "arn:aws:iam::100076174528:role/tf-stacks-deployment-role"
     identity_token = identity_token.aws.jwt
     default_tags   = { stacks-preview-example = "lambda-component-expansion-stack" }
